@@ -2,6 +2,7 @@
 session_start();
 include_once("topo.php");
 include_once("mensagem.php");?>
+<link rel="stylesheet" href="../css/signUp.css">
 
 <body>
     <h1>Cadastre-se</h1>
@@ -17,5 +18,12 @@ include_once("mensagem.php");?>
 
         <input type="submit" value="Finalizar cadastro">
     </form>
+    <script>
+        const titulo = document.querySelector("h1");
+
+        titulo.addEventListener("click", (e) =>{
+            sweet_message("Titulo clicado com sucesso")
+        })
+    </script>
 </body>
 </html>
