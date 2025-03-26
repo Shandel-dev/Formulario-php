@@ -1,0 +1,16 @@
+:root{
+    --cor-primaria: #e2e1e1;
+}
+
+.swat-message_popup{
+    color: var(--cor-primaria);
+    background-color: var(--cor-purple-dark);
+}
+
+.swat-message_popup span{
+    color: var(--cor-green-light);
+}
+
+.swat-message_timer{
+    background-color: var(--cor-green-light);
+}
