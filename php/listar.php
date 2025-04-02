@@ -17,8 +17,8 @@
                     <i class="fa-solid fa-face-smile"></i>
                     <h2><?php echo $user["nome"]; ?></h2>
                     <p><?php echo $user["email"]; ?></p>
-                    <a href="javascript:sweet_message('Senha do Usuário em hash: <br><span><?php echo $user['senha']; ?></span>')">Clique aqui</a>
-                    <a href="javascript:excluirUser(<?php echo $user["id_user"]; ?>)">Excluir Usuário</a>
+                    <a href="javascript:sweet_message('Senha do Usuário em hash: <br><span><?php echo $user['senha']; ?></span>')">Senha?</a>
+                    <a href="javascript:sweet_confirm('Deseja deletar o usuário <?php echo $user['nome'];?> ?', <?php echo $user['id_user'];?>)">Excluir Usuário</a>
                 </div>
             <?php
             }

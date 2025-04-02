@@ -5,7 +5,7 @@ include_once("topo.php");?>
 
 <body>
     <?php include("mensagem.php"); ?>
-    <a href="javascript:history.go(-1)">Voltar</a>
+    <a href="javascript:history.go(-1)" class="btn_back"><i class="fa-solid fa-circle-left"></i></a>
     <form action="processa.act.php" method="post" class="formMain">
         <h1 class="titulo">Cadastre-se</h1>
         <div class="labelInput">

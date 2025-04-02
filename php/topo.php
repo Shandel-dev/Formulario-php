@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +11,11 @@
 </head>
 
 <script>
-    function sweet_message(msg){
+    function sweet_message(msg) {
         tempo = msg.length / 6 * 750
         Swal.fire({
             position: "top-end",
-            title: "Mensagem...",
+            title: "<i class='fa-solid fa-message'></i> Mensagem...",
             html: `${msg}`,
             showConfirmButton: false,
             timer: tempo,
@@ -27,5 +28,29 @@
                 timerProgressBar: 'swat-message_timer'
             },
         })
+    }
+
+    function sweet_confirm(msg, id) {
+        Swal.fire({
+
+            title: "Deletar?",
+            html: `${msg}`,
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!",
+            backdrop: false,
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire({
+                    title: "Deleted!",
+                    text: `Id '${id}' excluido com sucesso!`,
+                    icon: "success",
+                    backdrop: false,
+                });
+                window.location = "excluirUser.php?id=" + id;
+            }
+        });
     }
 </script>

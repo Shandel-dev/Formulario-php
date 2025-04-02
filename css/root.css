@@ -14,10 +14,19 @@
 }
 
 body{
+    position: relative;
     height: 100dvh;
     color: var(--cor-primaria);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(0deg, rgba(0,7,36,1) 0%, rgba(244,68,46,1) 47%, rgba(252,158,79,1) 100%);    color: white;
+}
+
+.btn_back{
+    position: absolute;
+    font-size: 3em;
+    top: 1rem;
+    left: 1rem;
+    color: var(--cor-dark);
 }
 
 .swat-message_popup{
