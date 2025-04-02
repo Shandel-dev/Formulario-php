@@ -4,7 +4,7 @@ Um sistema simples de formulário conectado ao banco de dados. telas de cadastra
 
 ## 👤 Programação Web - Etec Itaquera
 
-- **Shandel Villasante Merlo** - [Shandel-dev](https://github.com/Shandel-dev)
+- **Shandel Villasante Merlo (Autor)** - [Shandel-dev](https://github.com/Shandel-dev)
 
 ### Banco de dados
 -db_formpw.sql
