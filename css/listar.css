@@ -21,15 +21,28 @@ body{
     border-radius: 1em;
     color: var(--cor-dark);
     gap: 0.5em;
+    transition: 0.3s;
+}
+
+.profile:active{
+    transform: scale(0.9);
+    transition: 0.3s;
 }
 
 .profile:hover{
     outline: 2px solid var(--cor-dark);
 }
 
-.profile i{
+.profile:hover i{
     color: var(--cor-dark);
+    transform: rotateY(180deg);
+    transition: 0.3s;
+}
+
+.profile i{
+    color: var(--cor-terciaria);
     font-size: 5em;
+    transition: 0.3s;
 }
 
 .profile a{
@@ -39,3 +52,4 @@ body{
     padding: 0.3em;
     text-decoration: none;
 }
+
