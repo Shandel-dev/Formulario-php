@@ -14,7 +14,7 @@
         tempo = msg.length / 6 * 750
         Swal.fire({
             position: "top-end",
-            title: "Título",
+            title: "Mensagem...",
             html: `${msg}`,
             showConfirmButton: false,
             timer: tempo,
