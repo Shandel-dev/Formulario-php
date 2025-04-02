@@ -1,18 +1,37 @@
 :root{
-    --cor-primaria: #e2e1e1;
-    --cor-purple-dark: #320252;
-    --cor-green-light: #6be705;
+    --cor-primaria: #F2F3AE;
+    --cor-primaria-bg: #f2f3ae80;
+    --cor-secundaria: #FC9E4F;
+    --cor-terciaria: #F4442E;
+    --cor-dark: #020122;
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100dvh;
+    color: var(--cor-primaria);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(0deg, rgba(0,7,36,1) 0%, rgba(244,68,46,1) 47%, rgba(252,158,79,1) 100%);    color: white;
 }
 
 .swat-message_popup{
     color: var(--cor-primaria);
-    background-color: var(--cor-purple-dark);
+    background-color: var(--cor-dark);
 }
 
 .swat-message_popup span{
-    color: var(--cor-green-light);
+    color: var(--cor-terciaria);
+    font-weight: 800;
 }
 
 .swat-message_timer{
-    background-color: var(--cor-green-light);
+    background-color: var(--cor-primaria);
 }
+
+/* sweet_messagem(); */

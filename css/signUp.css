@@ -1,1 +1,50 @@
 @import url(root.css);
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formMain{
+    display: flex;
+    flex-direction: column;
+    background-color: #31313180;
+    border: 1px solid rgba(255, 255, 255, 0.425);
+    padding: 2em;
+    border-radius: 1em;
+    gap: 1em;
+    min-width: 20em;
+}
+
+.formMain .titulo{
+    text-align: center;
+    color: var(--cor-primaria);
+}
+
+.formMain .labelInput{
+    display: flex;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 0.705);
+}
+
+.inputUser{
+    padding: 0.5em;
+    background-color: transparent;
+    border: unset;
+    color: var(--cor-primaria);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.733);
+}
+.inputUser:focus{
+    outline: unset;
+    border-bottom: 1px solid #EDD382;
+}
+
+input[type="submit"]{
+    background-color: #020122;
+    color: white;
+    padding: 0.5em;
+    border-radius: 1em;
+    border: unset;
+    cursor: pointer;
+}

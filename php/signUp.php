@@ -1,22 +1,28 @@
 <?php 
 session_start();
-include_once("topo.php");
-include_once("mensagem.php");?>
+include_once("topo.php");?>
 <link rel="stylesheet" href="../css/signUp.css">
 
 <body>
-    <h1>Cadastre-se</h1>
-    <form action="processa.act.php" method="post">
-        <label for="inome">Nome:</label>
-        <input type="text" name="nome" id="inome" required>
+    <?php include("mensagem.php"); ?>
+    <a href="javascript:history.go(-1)">Voltar</a>
+    <form action="processa.act.php" method="post" class="formMain">
+        <h1 class="titulo">Cadastre-se</h1>
+        <div class="labelInput">
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" required class="inputUser">
 
-        <label for="iemail">Email: </label>
-        <input type="email" name="email" id="iemail" required>
-        
-        <label for="ipass">Crie uma senha: </label>
-        <input type="password" name="senha" id="ipass" required>
+        </div>
+        <div class="labelInput">
+            <label for="iemail">Email: </label>
+            <input type="email" name="email" id="iemail" required class="inputUser">
 
-        <input type="submit" value="Finalizar cadastro">
+        </div>
+        <div class="labelInput">
+            <label for="ipass">Crie uma senha: </label>
+            <input type="password" name="senha" id="ipass" required class="inputUser">
+        </div>
+        <input type="submit" value="Finalizar Cadastro">
     </form>
     <script>
         const titulo = document.querySelector("h1");
