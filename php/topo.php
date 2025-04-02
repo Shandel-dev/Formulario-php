@@ -39,16 +39,13 @@
             showCancelButton: true,
             confirmButtonColor: "#3085d6",
             cancelButtonColor: "#d33",
-            confirmButtonText: "Yes, delete it!",
+            confirmButtonText: "Sim, delete este registro!",
             backdrop: false,
+            customClass: {
+                popup: 'swat-message_popup',
+            },
         }).then((result) => {
             if (result.isConfirmed) {
-                Swal.fire({
-                    title: "Deleted!",
-                    text: `Id '${id}' excluido com sucesso!`,
-                    icon: "success",
-                    backdrop: false,
-                });
                 window.location = "excluirUser.php?id=" + id;
             }
         });
