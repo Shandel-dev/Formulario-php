@@ -1,10 +1,10 @@
-# 🚀 Nome do Projeto
+# 🚀 Atividade - Formulario em PHP
 
-Uma breve descrição sobre o que o projeto faz e/ou sua motivação.
+Um sistema simples de formulário conectado ao banco de dados. telas de cadastrar e listagem de usuários implementados.
 
-## 👤 Autor
+## 👤 Programação Web - Etec Itaquera
 
-- **Nome do Autor** - [Shandel-dev](https://github.com/Shandel-dev)
+- **Shandel Villasante Merlo** - [Shandel-dev](https://github.com/Shandel-dev)
 
 ## 📄 Licença
 
