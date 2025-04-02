@@ -6,6 +6,9 @@ Um sistema simples de formulário conectado ao banco de dados. telas de cadastra
 
 - **Shandel Villasante Merlo** - [Shandel-dev](https://github.com/Shandel-dev)
 
+### Banco de dados
+-db_formpw.sql
+
 ## 📄 Licença
 
 Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
